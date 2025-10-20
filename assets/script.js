@@ -49,9 +49,9 @@ for(let i=0; i<teamMembers.length; i++){
   const card = document.getElementById('card')
   card.innerHTML= 
   `<img src= "./assets/${temp.img}">
-  <h3>${temp.name}</h3>
+  <p>${temp.name}</p>
   <p>${temp.role}</p>
-  <a>${temp.email}</a>
+  <a href>${temp.email}</a>
   `
   container.appendChild(card);
 }
