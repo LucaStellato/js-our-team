@@ -52,11 +52,13 @@ for (let i = 0; i < cards.length; i++) {
   const member = teamMembers[i];
 
   cards[i].innerHTML = `
-    <img style: width=98px src="./assets/${member.img}">
-    <p>${member.name}</p>
-    <p>${member.role}</p>
-    <a>${member.email}}</a>
-  `;
+   <img src="./assets/${member.img}" style="width: 100px; height: auto; margin-right: 15px;">
+    <div class="d-flex flex-column justify-content-center">
+      <h5 class="mb-1">${member.name}</h5>
+      <p class="mb-1">${member.role}</p>
+      <a href="mailto:${member.email}">${member.email}</a>
+    </div>
+    `
 }
 
 }
