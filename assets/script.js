@@ -46,7 +46,7 @@ const container = document.getElementById('container');
 for(let i=0; i<teamMembers.length; i++){
   const temp = teamMembers[i];
 
-  const card = document.createElement('div')
+  const card = document.getElementById('card')
   card.innerHTML= 
   `<h3>${temp.name}</h3>
   <p>${temp.role}</p>
