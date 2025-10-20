@@ -51,6 +51,6 @@ for(let i=0; i<teamMembers.length; i++){
   `<h3>${temp.name}</h3>
   <p>${temp.role}</p>
   <a>${temp.email}</a>
-  <img src ./${temp.img}>`
+  <img src= "./assets/${temp.img}">`
   container.appendChild(card);
 }
