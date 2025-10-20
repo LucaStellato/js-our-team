@@ -1,3 +1,6 @@
+console.log('it work')
+
+
 const teamMembers = [
   {
     name: "Marco Bianchi",
@@ -45,8 +48,9 @@ for(let i=0; i<teamMembers.length; i++){
 
   const card = document.createElement('div')
   card.innerHTML= 
-  `<h3>${name}</h3>
-  <p>${role}</p>
-  <a>${email}</a>
-  <img src ./${img}>`
+  `<h3>${temp.name}</h3>
+  <p>${temp.role}</p>
+  <a>${temp.email}</a>
+  <img src ./${temp.img}>`
+  container.appendChild(card);
 }
