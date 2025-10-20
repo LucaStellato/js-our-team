@@ -44,5 +44,9 @@ for(let i=0; i<teamMembers.length; i++){
   const temp = teamMembers[i];
 
   const card = document.createElement('div')
-  
+  card.innerHTML= 
+  `<h3>${name}</h3>
+  <p>${role}</p>
+  <a>${email}</a>
+  <img src ./${img}>`
 }
