@@ -42,5 +42,7 @@ const container = document.getElementById('container');
 
 for(let i=0; i<teamMembers.length; i++){
   const temp = teamMembers[i];
+
+  const card = document.createElement('div')
   
 }
