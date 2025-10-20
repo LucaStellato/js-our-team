@@ -38,3 +38,5 @@ const teamMembers = [
 ];
 
 
+const container = document.getElementById('container');
+
