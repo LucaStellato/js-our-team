@@ -54,8 +54,8 @@ for (let i = 0; i < cards.length; i++) {
   cards[i].innerHTML = `
    <img src="./assets/${member.img}" style="width: 100px; height: auto; margin-right: 15px;">
     <div class="d-flex flex-column justify-content-center">
-      <h5 class="mb-1">${member.name}</h5>
-      <p class="mb-1">${member.role}</p>
+      <h5 class="mb-1 text-white">${member.name}</h5>
+      <p class="mb-1 text-white">${member.role}</p>
       <a href="mailto:${member.email}">${member.email}</a>
     </div>
     `
