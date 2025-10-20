@@ -46,12 +46,17 @@ const container = document.getElementById('container');
 for(let i=0; i<teamMembers.length; i++){
   const temp = teamMembers[i];
 
-  const card = document.getElementById('card')
-  card.innerHTML= 
-  `<img src= "./assets/${temp.img}">
-  <p>${temp.name}</p>
-  <p>${temp.role}</p>
-  <a href>${temp.email}</a>
-  `
-  container.appendChild(card);
+const cards = document.querySelectorAll(".card");
+
+for (let i = 0; i < cards.length; i++) {
+  const member = teamMembers[i];
+
+  cards[i].innerHTML = `
+    <img style: width=98px src="./assets/${member.img}">
+    <p>${member.name}</p>
+    <p>${member.role}</p>
+    <a>${member.email}}</a>
+  `;
+}
+
 }
